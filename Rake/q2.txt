@@ -1,4 +1,4 @@
-rake db::migrate
+rake db:migrate
   未実行のマイグレーションファイルを実行する
   実行の流れ
     rake db:migrateを実行
@@ -7,7 +7,7 @@ rake db::migrate
     データベースの現在のバージョンと異なるバージョンがあった場合、データベースに適応
     schema_migrationsテーブルの更新
 
-rake db::create
+rake db:create
   database.ymlの内容でデータベースを作成。database.ymlファイルはrailsのアプリケーションを作成すると自動的に生成
   される。データベースが存在しない時に新規にデータベースを生成するコマンド。
 
