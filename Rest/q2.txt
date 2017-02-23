@@ -1,0 +1,5 @@
+CRUD        method
+C : create  POST
+R : read    GET
+U : update  PUT
+D : delete  DELETE
