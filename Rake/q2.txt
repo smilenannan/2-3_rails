@@ -1,0 +1,24 @@
+rake db::migrate
+  未実行のマイグレーションファイルを実行する
+  実行の流れ
+    rake db:migrateを実行
+    schema_migrationsテーブルを調べ、存在しなければ作成
+    db/migrateディレクトリ内のすべてのマイグレーションファイルを調べる
+    データベースの現在のバージョンと異なるバージョンがあった場合、データベースに適応
+    schema_migrationsテーブルの更新
+
+rake db::create
+  database.ymlの内容でデータベースを作成。database.ymlファイルはrailsのアプリケーションを作成すると自動的に生成
+  される。データベースが存在しない時に新規にデータベースを生成するコマンド。
+
+rake db:migrate:reset
+  すべてのデータベースを削除し、db:migrateを実行するコマンド。
+
+rake db:drop
+  rake db::createの逆の操作。データベースを削除する。
+
+rake -T
+  rakeのコマンド一覧を表示。
+
+rake routes
+  設定されたルーティングを確認する。
