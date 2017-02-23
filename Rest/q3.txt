@@ -1,37 +1,37 @@
 users
-/users                                  index
-/users                                  create
-/users/new                              new
-/users/:id/edit                         edit
-/users/:id                              show
-/users/:id                              update
-/users/:id                              update
-/users/:id                              destroy
+/users                                                 index
+/users                                                 create
+/users/new                                             new
+/users/:id/edit                                        edit
+/users/:id                                             show
+/users/:id                                             update
+/users/:id                                             update
+/users/:id                                             destroy
 
 articles
-/users/:user_id/articles                index
-/users/:user_id/articles                create
-/users/:user_id/articles/new            new
-/users/:user_id/articles/:id/edit       edit
-/users/:user_id/articles/:id            show
-/users/:user_id/articles/:id            update
-/users/:user_id/articles/:id            update
-/users/:user_id/articles/:id            destroy
+/users/:user_id/articles                               index
+/users/:user_id/articles                               create
+/users/:user_id/articles/new                           new
+/users/:user_id/articles/:id/edit                      edit
+/users/:user_id/articles/:id                           show
+/users/:user_id/articles/:id                           update
+/users/:user_id/articles/:id                           update
+/users/:user_id/articles/:id                           destroy
 
 comments
-/articles/:article_id/comments          index
-/articles/:article_id/comments          create
-/articles/:article_id/comments/new      new
-/articles/:article_id/comments/:id/edit edit
-/articles/:article_id/comments/:id      show
-/articles/:article_id/comments/:id      update
-/articles/:article_id/comments/:id      update
-/articles/:article_id/comments/:id      destroy
+/users/:user_id/articles/:article_id/comments          index
+/users/:user_id/articles/:article_id/comments          create
+/users/:user_id/articles/:article_id/comments/new      new
+/users/:user_id/articles/:article_id/comments/:id/edit edit
+/users/:user_id/articles/:article_id/comments/:id      show
+/users/:user_id/articles/:article_id/comments/:id      update
+/users/:user_id/articles/:article_id/comments/:id      update
+/users/:user_id/articles/:article_id/comments/:id      destroy
 
 
 演習
 コメント一覧【GET】
-URL : /articles/:article_id/comments          
+URL : /users/:user_id/articles                               
 action : index
 
 記事の新規作成画面【GET】
