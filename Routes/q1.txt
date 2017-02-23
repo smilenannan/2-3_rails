@@ -1,0 +1,26 @@
+resources:
+  resources :リソース名 と記述するとindex,show,new,create,edit,destroy,updateの７つの基本的なアクションを行うためのルーティングを自動的に生成する。
+
+collection:
+  resourcesメソッドで生成する7つのアクションに新たなアクションのルートを追加できる。idの指定は必要はない。
+
+member:
+  基本的にcollectionメソッドと機能は同じ。idを指定する必要がある。
+
+namespace:
+  namespace :モジュール名 do
+    ルート定義
+  end
+  のように使用し、ルートにモジュール名の名前空間を付与する。
+
+  例:
+    namespace :admin do
+      resources :user
+    end
+    # admin_user_index GET    /admin/user(.:format)          admin/user#index
+    #                  POST   /admin/user(.:format)          admin/user#create
+    #   new_admin_user GET    /admin/user/new(.:format)      admin/user#new
+    #  edit_admin_user GET    /admin/user/:id/edit(.:format) admin/user#edit
+    #       admin_user GET    /admin/user/:id(.:format)      admin/user#show
+    #                  PUT    /admin/user/:id(.:format)      admin/user#update
+    #                  DELETE /admin/user/:id(.:format)      admin/user#destroyh
