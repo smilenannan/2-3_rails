@@ -1,0 +1,2 @@
+Don't Repeat Yourselfの略
+Ruby on railsの設計の哲学であり、同じ処理は重複して書かないというもの。同じ処理はまとめるようにする設計思想。
